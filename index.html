@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Appointment System</title>
+  <link rel="stylesheet" href="css/style1.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #f1f8f9);
+      min-height: 100vh;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0077b6;
+      padding: 10px 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover,
+    .menu a.active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .header {
+      text-align: center;
+      margin: 50px 20px 30px;
+    }
+
+    .header h1 {
+      color: #2c3e50;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .role-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 30px 20px 60px;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 280px;
+      padding: 25px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      color: #0077b6;
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #0077b6;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .card a:hover {
+      background: #023e8a;
+    }
+
+    @media screen and (max-width: 768px) {
+      .role-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .navbar {
+        flex-direction: column;
+        text-align: flex-start;
+        gap:10px
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .menu a {
+        margin: 5px 0;
+      }
+
+
+
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/hospital_logo.svg" alt="Hospital Appointment System Logo">
+    </div>
+    <div class="menu">
+      <a href="index.php" >Home</a>
+      <a href="about.html">About</a>
+      <a href="index.html"class="active" >Login</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Welcome to Doctor Appointment System</h1>
+    <p>Select your role to proceed</p>
+  </div>
+
+  <!-- Role Cards -->
+  <div class="role-cards">
+    <!-- Patient Card -->
+    <div class="card">
+      <h2>Patient</h2>
+      <p>Book, manage appointments and give feedback.</p>
+      <a href="patient_login.php">Patient</a>
+    </div>
+
+    <!-- Doctor Card -->
+    <div class="card">
+      <h2>Doctor</h2>
+      <p>View and update appointment status.</p>
+      <a href="doctor/doctor_login.php">Doctor</a>
+    </div>
+
+    <!-- Admin Card -->
+    <div class="card">
+      <h2>Admin</h2>
+      <p>Manage doctors, patients, and appointments.</p>
+      <a href="admin/admin_login.php">Admin</a>
+    </div>
+  </div>
+
+</body>
+</html>

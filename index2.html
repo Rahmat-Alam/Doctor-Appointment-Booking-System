@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Appointment System</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #007bff;
+      padding: 1.2rem 0;
+      color: white;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,123,255,0.8), rgba(0,123,255,0.8)),
+      url('https://images.unsplash.com/photo-1588776814546-ec7e63a148cd') center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background: yellow;
+      color: black;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+    }
+
+    .features, .how-it-works, .doctors, .testimonials, .steps, .contact {
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .feature-grid, .doctor-grid, .testimonial-grid, .steps-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #f1f1f1;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 280px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .contact button {
+      background: #007bff;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .feature-grid, .doctor-grid, .testimonial-grid, .steps-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <div class="logo">🩺 Doctor Appointment</div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Register</a>
+        <a href="#">Login</a>
+        <a href="#">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Easy Online Appointments</h1>
+      <p>Book appointments with trusted doctors in just a few clicks</p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2 class="section-title">Why Choose Us?</h2>
+    <div class="container feature-grid">
+      <div class="card">
+        <h3>Quick Booking</h3>
+        <p>Book your appointments in seconds through a clean UI</p>
+      </div>
+      <div class="card">
+        <h3>Trusted Doctors</h3>
+        <p>Only verified and experienced doctors listed</p>
+      </div>
+      <div class="card">
+        <h3>24/7 Access</h3>
+        <p>Book or manage your appointments anytime, anywhere</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <h2 class="section-title">How It Works</h2>
+    <div class="container feature-grid">
+      <div class="card">
+        <h3>1. Register</h3>
+        <p>Create your account to get started</p>
+      </div>
+      <div class="card">
+        <h3>2. Choose Doctor</h3>
+        <p>View available doctors and schedules</p>
+      </div>
+      <div class="card">
+        <h3>3. Book Appointment</h3>
+        <p>Select date/time and confirm your booking</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="doctors">
+    <h2 class="section-title">Meet Our Doctors</h2>
+    <div class="container doctor-grid">
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" />
+        <h4>Dr. Raj Malhotra</h4>
+        <p>Cardiologist, 10+ yrs exp</p>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" />
+        <h4>Dr. Nisha Verma</h4>
+        <p>Dermatologist, 8+ yrs exp</p>
+      </div>
+      <div class="card">
+        <img src="https://randomuser.me/api/portraits/men/65.jpg" />
+        <h4>Dr. Arjun Patel</h4>
+        <p>Orthopedic, 12+ yrs exp</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2 class="section-title">What Patients Say</h2>
+    <div class="container testimonial-grid">
+      <div class="card">
+        <p>"Such a smooth experience. Booked in 2 mins!"</p>
+        <strong>- Anjali Singh</strong>
+      </div>
+      <div class="card">
+        <p>"Doctors were very professional and on time."</p>
+        <strong>- Ravi Kumar</strong>
+      </div>
+      <div class="card">
+        <p>"Highly recommended platform for health bookings."</p>
+        <strong>- Pooja Mehta</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps">
+    <h2 class="section-title">Start in 3 Easy Steps</h2>
+    <div class="container steps-grid">
+      <div class="card">
+        <h4>📝 Sign Up</h4>
+        <p>Use your phone or email to create account</p>
+      </div>
+      <div class="card">
+        <h4>🔍 Find Doctor</h4>
+        <p>Search by specialty or name</p>
+      </div>
+      <div class="card">
+        <h4>✅ Confirm</h4>
+        <p>Choose time & confirm appointment</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="container">
+      <form onsubmit="return handleSubmit(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Doctor Appointment System | All rights reserved.</p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert("Thank you for contacting us!");
+      return false;
+    }
+  </script>
+
+</body>
+</html>

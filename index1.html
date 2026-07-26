@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Login | KMCH</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0f8ff, #dff3ec);
+      line-height: 1.6;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0077b6;
+      padding: 15px 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    .logo img { height: 50px; }
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    .menu a:hover, .menu a.active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 500px;
+      margin: 60px auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    h2 { text-align: center; color: #0077b6; margin-bottom: 20px; }
+    form { display: flex; flex-direction: column; }
+    input[type="email"], input[type="password"] {
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 12px;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    button:hover { background-color: #023e8a; }
+    .error {
+      color: red;
+      margin-bottom: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .register-link {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .register-link a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+    .register-link a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .section:nth-child(even) { background-color: #f9f9f9; }
+    .section h3 { color: #023e8a; margin-bottom: 20px; font-size: 24px; }
+    .section p { font-size: 16px; color: #333; }
+    footer {
+      background-color: #023e8a;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/hospital_logo.svg" alt="Hospital Appointment System Logo">
+    </div>
+    <div class="menu">
+      <a href="index.php" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="index.html">Login</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2>Patient Login</h2>
+    <form action="#" method="POST">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <input type="password" name="password" placeholder="Enter your password" required>
+      <button type="submit">Login</button>
+    </form>
+    <div class="register-link">Don't have an account? <a href="register.php">Register Here</a></div>
+  </div>
+
+  <!-- 15 Scrollable Informational Sections -->
+  <div class="section"><h3>Why Login is Important?</h3><p>Login ensures security and privacy for your medical records. By logging in, you access personalized services.</p></div>
+  <div class="section"><h3>Features of Patient Login</h3><p>Appointment booking, history tracking, feedback system, secure access, profile management.</p></div>
+  <div class="section"><h3>How to Use Login</h3><p>Just enter your email and password. If you're new, use the Register link. Your data is safe with us.</p></div>
+  <div class="section"><h3>Why KMCH?</h3><p>Trusted hospital with professional doctors, advanced facilities, and secure technology for patient convenience.</p></div>
+  <div class="section"><h3>Security & Privacy</h3><p>End-to-end encryption, regular security audits, and strict policies ensure your data stays confidential.</p></div>
+  <div class="section"><h3>Patient Testimonials</h3><p>"The login system was so smooth, I booked my appointment in seconds!" - A Happy Patient.</p></div>
+  <div class="section"><h3>FAQs</h3><p>Forgot password? Click reset. Can't login? Contact support. Want to update email? Go to profile settings.</p></div>
+  <div class="section"><h3>About Our Doctors</h3><p>Highly qualified, experienced, and empathetic professionals. You can even see their schedules online.</p></div>
+  <div class="section"><h3>Success Stories</h3><p>Thousands of patients have used this portal for stress-free healthcare experiences. Be the next success story.</p></div>
+  <div class="section"><h3>Login Troubleshooting</h3><p>Use updated browser, clear cache, ensure caps-lock off, and stable internet connection.</p></div>
+  <div class="section"><h3>Support Section</h3><p>We're available 24/7. Use our chatbot, or email support@kmch.com for login help anytime.</p></div>
+  <div class="section"><h3>Health Tips</h3><p>Drink water regularly, avoid screen overuse, and never skip routine checkups. Login to track your vitals.</p></div>
+  <div class="section"><h3>System Updates</h3><p>Latest update: 2FA (Two-Factor Authentication) enabled for stronger login security and device detection.</p></div>
+  <div class="section"><h3>Policy Highlights</h3><p>We follow HIPAA and Indian data protection regulations. Read our terms and privacy policy during login.</p></div>
+  <div class="section"><h3>Join Our Community</h3><p>Become a KMCH member to get discounts, priority appointments, and regular health newsletters via login portal.</p></div>
+
+  <footer>
+    <p>&copy; 2025 KMCH Hospital | Designed for Patient Convenience</p>
+    <p>Contact Us: +91-9876543210 | Email: support@kmch.com</p>
+  </footer>
+</body>
+</html>

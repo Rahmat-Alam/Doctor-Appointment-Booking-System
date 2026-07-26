@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Doctor Appointment System</title>
+  <link rel="stylesheet" href="css/style1.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #f1f8f9);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0077b6;
+      padding: 10px 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover,
+    .menu a.active {
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .content {
+      max-width: 900px;
+      background: white;
+      margin: 80px auto;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      text-align: justify;
+      line-height: 1.7;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #0077b6;
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background: #023e8a;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .menu a {
+        margin: 5px 0;
+      }
+
+      .content {
+        margin: 30px 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="images/hospital_logo.svg" alt="Hospital Appointment System Logo">
+  </div>
+  <div class="menu">
+    <a href="index.php">Home</a>
+    <a href="about.html" class="active">About</a>
+    
+  </div>
+</nav>
+
+<div class="content">
+  <h1>About the Online Doctor Appointment Booking System</h1>
+  <p>
+    The Doctor Appointment System is a modern web application designed to simplify and digitize the process of booking, managing, and tracking medical appointments for hospitals and clinics.<br><br>
+    <strong>Key Features:</strong><br>
+    <ul style="margin-left:20px;">
+      <li><strong>For Patients:</strong> Register and log in, search for doctors by department, view doctor profiles, book appointments based on real-time availability, view and manage appointment history, access medical records, rate and review doctors, and manage personal account details.</li>
+      <li><strong>For Doctors:</strong> Log in securely, set and update their availability, view and manage upcoming appointments, approve or cancel appointments, and update their profile and specialization.</li>
+      <li><strong>For Admins:</strong> Manage doctor and patient accounts, monitor all appointments, and access analytics dashboards for trends and user activity.</li>
+    </ul>
+    <br>
+    <strong>Why use our system?</strong><br>
+    <ul style="margin-left:20px;">
+      <li>24/7 online appointment booking and management</li>
+      <li>Reduces waiting time and administrative workload</li>
+      <li>Ensures secure and private handling of patient data</li>
+      <li>Improves communication between patients, doctors, and staff</li>
+      <li>Mobile-friendly and easy to use for all users</li>
+    </ul>
+    <br>
+    Our goal is to make healthcare more accessible, efficient, and transparent for everyone. Whether you are a patient seeking care, a doctor managing your schedule, or an admin overseeing operations, our system is built to support your needs.
+  </p>
+  <a href="index.php" class="btn">Back to Home</a>
+</div>
+
+</body>
+</html>

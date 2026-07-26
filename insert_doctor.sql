@@ -1,0 +1,2 @@
+INSERT INTO doctors (name, email, password, contact, address, specialization, qualification, experience, profile_pic)
+VALUES ('Dr. Test', 'doctor@example.com', 'test@123', '1234567890', 'Test Address', 'Cardiology', 'MBBS', 5, ''); 
